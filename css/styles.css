@@ -10,11 +10,12 @@ Button Color (Dark Sea Green):#89BE90
 
 :root {
   --primary-color: #564256;
-  --secondary-color: #D12A2E;
+  --secondary-color: #d12a2e;
   --bg-color: #fff9eb;
-  --text-color: #08211F;
-  --button-color: #89BE90;
+  --text-color: #08211f;
+  --button-color: #89be90;
 }
+
 body {
   background-color: var(--bg-color);
   font-family: 'Quicksand', sans-serif;
@@ -44,10 +45,12 @@ a {
 }
 
 a:visited {
-  /*visited link*/
+  /* visited link */
   color: var(--primary-color);
 }
-a:hover, a:focus {
+
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
@@ -56,33 +59,42 @@ a:active {
   color: var(--button-color);
 }
 
-.button, button {
+.button,
+button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--button-color);
   color: var(--bg-color);
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
 .button__secondary {
-  background-color: #D12A2E;
+  background-color: #d12a2e;
 }
 
 .navigation-list__item--active {
@@ -113,6 +125,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin: auto;
   text-align: center;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -148,7 +161,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .grid__item {
-  background-color: #89BE90;
+  background-color: #89be90;
 }
 
 .grid__item:last-child {
@@ -161,19 +174,23 @@ button:hover, button:focus, .button:hover, .button:focus {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -183,9 +200,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -199,6 +218,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -212,6 +232,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
