@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
 * Browsers: last 4 version
 */
 
@@ -14,13 +14,14 @@ Primary Color (English Violet):#564256
 Secondary Color (Amaranth Red):#D12A2E
 Button Color (Dark Sea Green):#89BE90
 */
+
 body {
   background-color: #fff9eb;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  color: #08211F;
+  color: #08211f;
 }
 
 h1 {
@@ -39,35 +40,41 @@ h3 {
 }
 
 a {
-  color: #D12A2E;
+  color: #d12a2e;
 }
 
 a:visited {
-  /*visited link*/
+  /* visited link */
   color: #564256;
 }
-a:hover, a:focus {
+
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
 
 a:active {
-  color: #89BE90;
+  color: #89be90;
 }
 
 .button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #89BE90;
+  background-color: #89be90;
   color: #fff9eb;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -79,15 +86,19 @@ button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
+
   /* takes the font from the outer container */
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #89BE90;
+  background-color: #89be90;
   color: #fff9eb;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -95,15 +106,19 @@ button {
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
 .button__secondary {
-  background-color: #D12A2E;
+  background-color: #d12a2e;
 }
 
 .navigation-list__item--active {
@@ -139,6 +154,18 @@ button:hover, button:focus, .button:hover, .button:focus {
   margin: auto;
   text-align: center;
 }
+
+.work,
+.contact {
+  margin: auto;
+  text-align: center;
+}
+
+.contactcontent {
+  max-width: 400px;
+  margin: auto;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -183,7 +210,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .grid__item {
-  background-color: #89BE90;
+  background-color: #89be90;
 }
 
 .grid__item:last-child {
@@ -200,20 +227,24 @@ button:hover, button:focus, .button:hover, .button:focus {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -223,9 +254,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -235,9 +268,11 @@ button:hover, button:focus, .button:hover, .button:focus {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -253,6 +288,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
             transform: translate(200px, 50px);
@@ -264,6 +300,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
             transform: translate(200px, 50px);
@@ -280,6 +317,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-transform: translate(446px, 48px);
             transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
             transform: translate(100px, 48px);
@@ -291,6 +329,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     -webkit-transform: translate(446px, 48px);
             transform: translate(446px, 48px);
   }
+
   to {
     -webkit-transform: translate(100px, 48px);
             transform: translate(100px, 48px);

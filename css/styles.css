@@ -126,6 +126,17 @@ button:focus,
   text-align: center;
 }
 
+.work,
+.contact {
+  margin: auto;
+  text-align: center;
+}
+
+.contactcontent {
+  max-width: 400px;
+  margin: auto;
+}
+
 * {
   box-sizing: border-box;
 }
