@@ -163,7 +163,7 @@ button:focus,
 
 .contactcontent {
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 * {

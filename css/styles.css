@@ -120,21 +120,17 @@ button:focus,
   margin: 0 auto;
 }
 
-.about {
-  max-width: 700px;
-  margin: auto;
-  text-align: center;
-}
-
+.about,
 .work,
 .contact {
+  max-width: 700px;
   margin: auto;
   text-align: center;
 }
 
 .contactcontent {
   max-width: 400px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 * {
